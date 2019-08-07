@@ -22,14 +22,14 @@ import java.util.Vector;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class HomeFragment extends Fragment {
+public class home_fragment extends Fragment {
 
     private RecyclerView recyclerView;
     private LinearLayoutManager layoutManager;
-    private PostListAdapter adapter;
+    private post_to_list_adapter adapter;
     private Vector<Post> posts = new Vector<>(); //TODO remove
 
-    public HomeFragment() {
+    public home_fragment() {
         // Required empty public constructor
     }
 
@@ -65,7 +65,7 @@ public class HomeFragment extends Fragment {
             posts.add(post);
         }
 
-        adapter = new PostListAdapter(posts);
+        adapter = new post_to_list_adapter(posts);
         recyclerView.setAdapter(adapter);
 
 

@@ -14,11 +14,11 @@ import com.example.profily.Schema.Post;
 
 import java.util.Vector;
 
-public class PostListAdapter extends RecyclerView.Adapter<PostListAdapter.PostRowViewHolder> {
+public class post_to_list_adapter extends RecyclerView.Adapter<post_to_list_adapter.PostRowViewHolder> {
 
     private Vector<Post> postsList; //TODO maybe to delete
 
-    public PostListAdapter(Vector<Post> postsList) {
+    public post_to_list_adapter(Vector<Post> postsList) {
         this.postsList = postsList;
     }//TODO maybe to delete
 

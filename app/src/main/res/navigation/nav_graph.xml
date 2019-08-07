@@ -3,66 +3,66 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/homeFragment">
+    app:startDestination="@id/home_fragment">
 
     <fragment
-        android:id="@+id/homeFragment"
-        android:name="com.example.profily.Home.HomeFragment"
-        android:label="fragment_home"
-        tools:layout="@layout/fragment_home" >
+        android:id="@+id/home_fragment"
+        android:name="com.example.b9000v3.Home.home_fragment"
+        android:label="home_fragment"
+        tools:layout="@layout/home_fragment" >
         <action
-            android:id="@+id/action_homeFragment_to_profileFragment"
-            app:destination="@id/profileFragment" />
+            android:id="@+id/action_home_fragment_to_profile_fragment"
+            app:destination="@id/profile_fragment" />
         <action
-            android:id="@+id/action_homeFragment_to_commentsFragment"
-            app:destination="@id/commentsFragment" />
+            android:id="@+id/action_home_fragment_to_comments_fragment"
+            app:destination="@id/comments_fragment" />
         <action
-            android:id="@+id/action_homeFragment_to_searchFragment"
-            app:destination="@id/searchFragment" />
+            android:id="@+id/action_home_fragment_to_search_fragment"
+            app:destination="@id/search_fragment" />
     </fragment>
     <fragment
-        android:id="@+id/searchFragment"
-        android:name="com.example.profily.Search.SearchFragment"
-        android:label="fragment_search"
-        tools:layout="@layout/fragment_search" >
+        android:id="@+id/search_fragment"
+        android:name="com.example.b9000v3.Search.search_fragment"
+        android:label="search_fragment"
+        tools:layout="@layout/search_fragment" >
         <action
-            android:id="@+id/action_searchFragment_to_profileFragment"
-            app:destination="@id/profileFragment" />
+            android:id="@+id/action_search_fragment_to_profile_fragment"
+            app:destination="@id/profile_fragment" />
     </fragment>
     <fragment
-        android:id="@+id/uploadImageFragment"
-        android:name="com.example.profily.UploadImageFragment"
-        android:label="fragment_upload_image"
-        tools:layout="@layout/fragment_upload_image" />
+        android:id="@+id/upload_image_fragment"
+        android:name="com.example.b9000v3.upload_image_fragment"
+        android:label="upload_image_fragment"
+        tools:layout="@layout/upload_image_fragment" />
     <fragment
-        android:id="@+id/notificationsFragment"
-        android:name="com.example.profily.Notifications.NotificationsFragment"
-        android:label="fragment_notifications"
-        tools:layout="@layout/fragment_notifications" >
+        android:id="@+id/notifications_fragment"
+        android:name="com.example.b9000v3.Notifications.notifications_fragment"
+        android:label="notifications_fragment"
+        tools:layout="@layout/notifications_fragment" >
         <action
-            android:id="@+id/action_notificationsFragment_to_profileFragment"
-            app:destination="@id/profileFragment" />
+            android:id="@+id/action_notifications_fragment_to_profile_fragment"
+            app:destination="@id/profile_fragment" />
     </fragment>
     <fragment
-        android:id="@+id/profileFragment"
-        android:name="com.example.profily.Profile.ProfileFragment"
-        android:label="fragment_profile"
-        tools:layout="@layout/fragment_profile" >
+        android:id="@+id/profile_fragment"
+        android:name="com.example.b9000v3.Profile.profile_fragment"
+        android:label="profile_fragment"
+        tools:layout="@layout/profile_fragment" >
         <action
-            android:id="@+id/action_profileFragment_to_commentsFragment"
-            app:destination="@id/commentsFragment" />
+            android:id="@+id/action_profile_fragment_to_comments_fragment"
+            app:destination="@id/comments_fragment" />
         <action
-            android:id="@+id/action_profileFragment_to_post"
+            android:id="@+id/action_profile_fragment_to_post"
             app:destination="@id/post" />
     </fragment>
     <fragment
-        android:id="@+id/commentsFragment"
-        android:name="com.example.profily.Comments.CommentsFragment"
-        android:label="fragment_comments"
-        tools:layout="@layout/fragment_comments" />
+        android:id="@+id/comments_fragment"
+        android:name="com.example.b9000v3.Comments.comments_fragment"
+        android:label="comments_fragment"
+        tools:layout="@layout/comments_fragment" />
     <fragment
         android:id="@+id/post"
-        android:name="com.example.profily.Post.Post"
-        android:label="fragment_post"
-        tools:layout="@layout/fragment_post" />
+        android:name="com.example.b9000v3.Post.post"
+        android:label="post_fragment"
+        tools:layout="@layout/post_fragment" />
 </navigation>

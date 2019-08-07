@@ -25,7 +25,7 @@ import java.util.Vector;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class SearchFragment extends Fragment {
+public class search_fragment extends Fragment {
 
 
     private RecyclerView recyclerView;
@@ -35,7 +35,7 @@ public class SearchFragment extends Fragment {
 
     private EditText searchBox;
 
-    public SearchFragment() {
+    public search_fragment() {
         // Required empty public constructor
     }
 
