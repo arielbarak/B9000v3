@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <item name="movies_tv" type="id"><![CDATA[Movies & TV]]></item>
-    <item name="music" type="id">Music</item>
-    <item name="sports" type="id">Sports</item>
-</resources>
