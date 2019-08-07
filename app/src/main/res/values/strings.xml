@@ -4,6 +4,22 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
 
+    <string name="password">Password</string>
+    <string name="register_lable">Register</string>
+    <string name="sign_in_lable">Sign In</string>
+    <string name="full_name">Full Name</string>
+    <string name="date_of_birth">Date Of Birth</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="login">Login</string>
+    <string name="gender">Pick your gender</string>
+    <string-array name="array_gender">
+        <item>Man</item>
+        <item>Woman</item>
+    </string-array>
+    <string name="profile_picture">Profile Picture</string>
+    <string name="add_picture">Add Picture</string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+
+    <TextView
+        android:id="@+id/tvSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:text="@string/sign_in_lable"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:autoSizeTextType="uniform"
+        app:fontFamily="sans-serif-condensed-light"
+        android:gravity ="center"
+        android:textColor="@color/dark_orange"
+        android:textStyle="bold"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="@string/email"
+        app:fontFamily="sans-serif-condensed-light"
+        android:textColor="@color/turquoise"
+        android:textSize="20"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:inputType="textEmailAddress"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="@string/password"
+        app:fontFamily="sans-serif-condensed-light"
+        android:textColor="@color/turquoise"
+        android:textSize="20"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:inputType="textPassword"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/bSignIn"
+        android:text="@string/sign_in_lable"
+        android:layout_width="match_parent"
+        android:textColor="@color/dark_orange"
+        android:background="@drawable/button_design"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>
