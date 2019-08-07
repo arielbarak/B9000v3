@@ -34,7 +34,7 @@
         android:layout_marginTop="4dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:text="Liked / Commented / Sebscribed realllyyyyyyyyyyyyyyy butttt reallllyyyy long one"
+        android:text="Liked / Commented / Subscribed"
         android:textColor="@android:color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/notifications_effected_user_image"
@@ -55,7 +55,7 @@
         app:srcCompat="@drawable/sunset" />
 
     <TextView
-        android:id="@+id/notifications_elapsed_time"
+        android:id="@+id/notification_time_posted_ago"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"

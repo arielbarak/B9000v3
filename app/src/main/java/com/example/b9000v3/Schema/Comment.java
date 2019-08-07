@@ -7,18 +7,9 @@ public class Comment {
     private String content;
 
     // FK References
-    private String userId;
-    private String postId;
-
-    public Date getActionDateTime() {
-        return actionDateTime;
-    }
-
-    public void setActionDateTime(Date actionDateTime) {
-        this.actionDateTime = actionDateTime;
-    }
-
-    private Date actionDateTime;
+    private String user_id;
+    private String post_id;
+    private Date action_time;
 
     public String getId() {
         return id;
@@ -36,20 +27,28 @@ public class Comment {
         this.content = content;
     }
 
-    public String getUserId() {
-        return userId;
+    public String getUser_id() {
+        return user_id;
     }
 
-    public void setUserId(String userId) {
-        this.userId = userId;
+    public void setUser_id(String user_id) {
+        this.user_id = user_id;
     }
 
-    public String getPostId() {
-        return postId;
+    public String getPost_id() {
+        return post_id;
     }
 
-    public void setPostId(String postId) {
-        this.postId = postId;
+    public void setPost_id(String post_id) {
+        this.post_id = post_id;
+    }
+
+    public Date getAction_time() {
+        return action_time;
+    }
+
+    public void setAction_time(Date action_time) {
+        this.action_time = action_time;
     }
 }
 

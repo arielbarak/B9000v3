@@ -4,7 +4,7 @@ import java.util.List;
 
 public class Post {
     private String id;
-    private String userCreatorId;
+    private String user_id;
     private String imageURL;
     private String caption;
 
@@ -18,14 +18,6 @@ public class Post {
 
     public void setId(String id) {
         this.id = id;
-    }
-
-    public String getUserCreatorId() {
-        return userCreatorId;
-    }
-
-    public void setUserCreatorId(String userCreatorId) {
-        this.userCreatorId = userCreatorId;
     }
 
     public String getImageURL() {
@@ -60,4 +52,11 @@ public class Post {
         this.commentsList = commentsList;
     }
 
+    public String getUser_id() {
+        return user_id;
+    }
+
+    public void setUser_id(String user_id) {
+        this.user_id = user_id;
+    }
 }

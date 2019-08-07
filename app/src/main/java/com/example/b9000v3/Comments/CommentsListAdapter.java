@@ -9,9 +9,12 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.profily.R;
-import com.example.profily.Schema.Comment;
-import com.example.profily.Utils.DateTimeUtils;
+import com.example.b9000v3.R;
+import com.example.b9000v3.Schema.Comment;
+import com.example.b9000v3.Utils.DateTimeUtils;
+import com.example.b9000v3.R;
+import com.example.b9000v3.Schema.Comment;
+import com.example.b9000v3.Utils.DateTimeUtils;
 
 import java.util.Vector;
 
@@ -54,17 +57,17 @@ public class CommentsListAdapter extends RecyclerView.Adapter<CommentsListAdapte
             super(itemView);
 
             commentUserImage = itemView.findViewById(R.id.comment_commenter_image);
-            commentUserUsername = itemView.findViewById(R.id.comment_commenter_username);
+            commentUserUsername = itemView.findViewById(R.id.commenter_username);
             commentDescription = itemView.findViewById(R.id.comment_description);
-            actionElapsedTime = itemView.findViewById(R.id.notifications_elapsed_time);
+            actionElapsedTime = itemView.findViewById(R.id.comment_time_posted_ago);
 
         }
 
         public void bind(Comment comment) {
 
-            commentUserUsername.setText("username " + comment.getUserId()); // TODO change
+            commentUserUsername.setText("username " + comment.getUser_id()); // TODO change
             commentDescription.setText(comment.getContent());
-            actionElapsedTime.setText(DateTimeUtils.getFormattedElapsedTime(comment.getActionDateTime()));
+            actionElapsedTime.setText(DateTimeUtils.getFormattedElapsedTime(comment.getAction_time()));
         }
     }
 }

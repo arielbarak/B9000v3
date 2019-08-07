@@ -8,8 +8,8 @@ import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.profily.R;
-import com.example.profily.Schema.Post;
+import com.example.b9000v3.Schema.Post;
+import com.example.b9000v3.R;
 
 import java.util.Vector;
 
@@ -48,7 +48,7 @@ public class ImageGridAdapter extends RecyclerView.Adapter<ImageGridAdapter.Imag
 
             super(itemView);
 
-            image = itemView.findViewById(R.id.profile_grid_image);
+            image = itemView.findViewById(R.id.profile_image);
         }
 
         public void bind(Post post){

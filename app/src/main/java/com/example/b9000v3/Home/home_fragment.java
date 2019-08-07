@@ -11,8 +11,8 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.profily.R;
-import com.example.profily.Schema.Post;
+import com.example.b9000v3.R;
+import com.example.b9000v3.Schema.Post;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -38,7 +38,7 @@ public class home_fragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View view = inflater.inflate(R.layout.fragment_home, container, false);
+        View view = inflater.inflate(R.layout.home_fragment, container, false);
 
         recyclerView = view.findViewById(R.id.home_recycler_view);
         recyclerView.setHasFixedSize(true);
@@ -61,7 +61,7 @@ public class home_fragment extends Fragment {
             likes.add("22");
             likes.add("23");
             post.setLikedUsersList(likes);
-            post.setUserCreatorId("123123123");
+            post.setUser_id("123123123");
             posts.add(post);
         }
 

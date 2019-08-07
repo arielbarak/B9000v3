@@ -61,7 +61,7 @@
         android:label="comments_fragment"
         tools:layout="@layout/comments_fragment" />
     <fragment
-        android:id="@+id/post"
+        android:id="@+id/post_fragment"
         android:name="com.example.b9000v3.Post.post"
         android:label="post_fragment"
         tools:layout="@layout/post_fragment" />

@@ -10,8 +10,8 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.profily.R;
-import com.example.profily.Schema.User;
+import com.example.b9000v3.R;
+import com.example.b9000v3.Schema.User;
 
 import java.util.Vector;
 
@@ -36,7 +36,7 @@ public class UserListFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_search, container, false);
+        View view = inflater.inflate(R.layout.search_fragment, container, false);
 
         recyclerView = view.findViewById(R.id.user_recycler_view);
         recyclerView.setHasFixedSize(true);

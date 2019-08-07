@@ -9,8 +9,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.profily.R;
-import com.example.profily.Schema.Post;
+import com.example.b9000v3.Schema.Post;
+import com.example.b9000v3.R;
 
 import java.util.Vector;
 
@@ -66,7 +66,7 @@ public class post_to_list_adapter extends RecyclerView.Adapter<post_to_list_adap
         }
 
         public void bind(Post post){
-            username.setText(post.getUserCreatorId()); //TODO change to the creators name
+            username.setText(post.getUser_id()); //TODO change to the creators name
             numOfLikes.setText(post.getLikedUsersList().size() + " likes");
             caption.setText(post.getCaption());
             comments.setText("View all " + post.getCommentsList().size() + " comments");

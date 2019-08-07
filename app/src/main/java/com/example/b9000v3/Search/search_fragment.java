@@ -14,9 +14,11 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.profily.R;
-import com.example.profily.Schema.User;
-import com.example.profily.User.UserListAdapter;
+import com.example.b9000v3.Schema.User;
+import com.example.b9000v3.User.UserListAdapter;
+import com.example.b9000v3.R;
+import com.example.b9000v3.Schema.User;
+import com.example.b9000v3.User.UserListAdapter;
 
 import java.util.Locale;
 import java.util.Vector;
@@ -31,7 +33,7 @@ public class search_fragment extends Fragment {
     private RecyclerView recyclerView;
     private LinearLayoutManager layoutManager;
     private UserListAdapter adapter;
-    private Vector<User> searchedUsers = new Vector<>(); //TODO remove
+    private Vector<User> searched_users = new Vector<>(); //TODO remove
 
     private EditText searchBox;
 
@@ -44,7 +46,7 @@ public class search_fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_search, container, false);
+        View view = inflater.inflate(R.layout.search_fragment, container, false);
 
         recyclerView = view.findViewById(R.id.user_recycler_view);
         recyclerView.setHasFixedSize(true);
@@ -63,13 +65,13 @@ public class search_fragment extends Fragment {
         User u3 = new User();
         u3.setUsername("Teleh");
 
-        searchedUsers.add(u1);
-        searchedUsers.add(u2);
-        searchedUsers.add(u3);
+        searched_users.add(u1);
+        searched_users.add(u2);
+        searched_users.add(u3);
 
 
 
-        adapter = new UserListAdapter(searchedUsers);
+        adapter = new UserListAdapter(searched_users);
         recyclerView.setAdapter(adapter);
 
 
@@ -107,23 +109,23 @@ public class search_fragment extends Fragment {
 
         }
         else{
-            Vector <User> newUsers = new Vector<>();
-            for (User user: searchedUsers)
+            Vector <User> new_users = new Vector<>();
+            for (User user: searched_users)
             {
                 if (user.getUsername().contains(keyword)){
                     updateUsersList();
                 }
             }
-            Log.d("TAG: new user list ", newUsers.toString());
+            Log.d("TAG: new user list ", new_users.toString());
 
-            searchedUsers = newUsers;
+            searched_users = new_users;
         }
     }
 
     private void updateUsersList(){
         Log.d("TAG", "updateUsersList: updating users list");
 
-        adapter = new UserListAdapter(searchedUsers);
+        adapter = new UserListAdapter(searched_users);
 
         recyclerView.setAdapter(adapter);
 

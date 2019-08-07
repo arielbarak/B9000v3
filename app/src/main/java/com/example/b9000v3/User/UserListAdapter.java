@@ -10,8 +10,9 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.profily.R;
-import com.example.profily.Schema.User;
+import com.example.b9000v3.Schema.User;
+import com.example.b9000v3.R;
+import com.example.b9000v3.Schema.User;
 
 import java.util.Vector;
 
@@ -51,8 +52,8 @@ public class UserListAdapter extends RecyclerView.Adapter<UserListAdapter.UserRo
 
             super(itemView);
 
-            userImage = itemView.findViewById(R.id.searched_user_user_image);
-            userUsername = itemView.findViewById(R.id.searched_user_user_username);
+            userImage = itemView.findViewById(R.id.searched_user_image);
+            userUsername = itemView.findViewById(R.id.searched_user_username);
         }
 
         public void bind(User user){

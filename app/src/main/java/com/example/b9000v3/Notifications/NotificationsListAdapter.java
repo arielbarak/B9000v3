@@ -9,9 +9,12 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.profily.R;
-import com.example.profily.Schema.Notification;
-import com.example.profily.Utils.DateTimeUtils;
+import com.example.b9000v3.R;
+import com.example.b9000v3.Schema.Notification;
+import com.example.b9000v3.Utils.DateTimeUtils;
+import com.example.b9000v3.R;
+import com.example.b9000v3.Schema.Notification;
+import com.example.b9000v3.Utils.DateTimeUtils;
 
 import java.util.Vector;
 
@@ -57,13 +60,13 @@ public class NotificationsListAdapter extends RecyclerView.Adapter<Notifications
             effectedUserImage = itemView.findViewById(R.id.notifications_effected_user_image);
             triggeringUserUsername = itemView.findViewById(R.id.notification_trigger_user_username);
             description = itemView.findViewById(R.id.notification_description);
-            actionElapsedTime = itemView.findViewById(R.id.notifications_elapsed_time);
+            actionElapsedTime = itemView.findViewById(R.id.notification_time_posted_ago);
         }
 
         public void bind(Notification notification){
             triggeringUserUsername.setText("Triggering User # " + notification.getTriggeringUserId()); // TODO change
             description.setText(notification.getAction().getDescription());
-            actionElapsedTime.setText(DateTimeUtils.getFormattedElapsedTime(notification.getActionDateTime()));
+            actionElapsedTime.setText(DateTimeUtils.getFormattedElapsedTime(notification.getAction_date_time()));
         }
     }
 }

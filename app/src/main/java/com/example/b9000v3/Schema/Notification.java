@@ -1,24 +1,19 @@
 package com.example.b9000v3.Schema;
 
-import com.example.profily.Schema.Action.Action;
+import com.example.b9000v3.Schema.Action.Action;
+import com.example.b9000v3.Schema.Action.Action;
 
 import java.util.Date;
 
 public class Notification {
 
-    private String notificationId;
+    private String notification_id;
     private Action action;
     private String triggeringUserId;
     private String effectedUserId;
-    private Date actionDateTime;
+    private Date action_date_time;
 
-    public String getNotificationId() {
-        return notificationId;
-    }
 
-    public void setNotificationId(String notificationId) {
-        this.notificationId = notificationId;
-    }
 
     public Action getAction() {
         return action;
@@ -44,12 +39,20 @@ public class Notification {
         this.effectedUserId = effectedUserId;
     }
 
-    public Date getActionDateTime() {
-        return actionDateTime;
+    public String getNotification_id() {
+        return notification_id;
     }
 
-    public void setActionDateTime(Date actionDateTime) {
-        this.actionDateTime = actionDateTime;
+    public void setNotification_id(String notification_id) {
+        this.notification_id = notification_id;
+    }
+
+    public Date getAction_date_time() {
+        return action_date_time;
+    }
+
+    public void setAction_date_time(Date action_date_time) {
+        this.action_date_time = action_date_time;
     }
 }
 
